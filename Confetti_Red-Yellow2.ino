@@ -8,7 +8,7 @@
 #define LED_PIN 13// Data pin to connect to the strip.
 #define COLOR_ORDER RGB                                       // Color order
 #define LED_TYPE WS2811
-#define NUM_LEDS 249                                          // Number of LED's
+#define NUM_LEDS 250                                          // Number of LED's
 
 struct CRGB leds[NUM_LEDS];                                   // Initialize our LED array.
 
@@ -43,7 +43,7 @@ void Confetti() {                                             // Random colored 
   int hue = random16(minhue, maxhue);                         // Determining the hue between "minhue" and "maxhue"
   int pos = random16(NUM_LEDS);                               // Pick an LED at random.
 
-  fadeToBlackBy(leds, NUM_LEDS, fade);                        // Fade individual pixels to black by "thisfade" each tic
+  fadeToBlackBy(leds, NUM_LEDS, fade);                        // Fade individual pixels to black by "fade" each tic
 
   leds[pos] += CHSV(hue, sat, bri);                           // Set random pixel to the random hue
 } // Confetti()

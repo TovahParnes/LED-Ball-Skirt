@@ -8,7 +8,7 @@
 #define LED_PIN 13// Data pin to connect to the strip.
 #define COLOR_ORDER RGB                                       // Color order
 #define LED_TYPE WS2811
-#define NUM_LEDS 250                                          // Number of LED's
+#define NUM_LEDS 240                                          // Number of LED's
 
 struct CRGB leds[NUM_LEDS];                                   // Initialize our LED array.
 
